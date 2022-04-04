@@ -28,7 +28,7 @@ const syntaxHighlighting = HighlightStyle.define([
     {
         tag: tags.heading2,
         fontSize: '1.4em',
-        fonrWeight: 'bold'
+        fontWeight: 'bold'
     }
 ])
 import type React from 'react'
