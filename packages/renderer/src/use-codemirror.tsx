@@ -10,7 +10,6 @@ import { defaultHighlightStyle, HighlightStyle, tags } from "@codemirror/highlig
 import { markdown, markdownLanguage } from "@codemirror/lang-markdown";
 import { languages } from "@codemirror/language-data";
 import { oneDark } from "@codemirror/theme-one-dark";
-import { javascript } from "@codemirror/lang-javascript";
 
 export const transparentTheme = EditorView.theme({
     '&': {
@@ -58,6 +57,8 @@ const useCodeMirror = <T extends Element>(
                 bracketMatching(),
                 defaultHighlightStyle.fallback,
                 highlightActiveLine(),
+                // javascript(),
+                // cpp(),
                 markdown({
                     base: markdownLanguage,
                     codeLanguages: languages,
